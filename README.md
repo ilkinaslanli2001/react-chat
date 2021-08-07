@@ -17,8 +17,8 @@
 
 
 
-# Installing Backend
-To run this project, install it locally using npm:
+## Setup Backend
+For successfully running backend do:
 
 ```
 $ virtualenv env
@@ -42,6 +42,22 @@ $ python manage.py createsuperuser
 Start your Redis Server
 
 and finaly run your server
+
 ``` 
 $ python manage.py runserver
+```
+
+
+## Setup Frontend
+
+install packages with npm:
+
+``` 
+$ npm install package.json
+```
+
+and run your server
+
+``` 
+$ npm run dev
 ```
