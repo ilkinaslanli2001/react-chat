@@ -5,7 +5,7 @@
 ### Technologies
 * DJOSER (JWT Tokens)
 * Django Channels
-* Emoji
+* Redux
  
  
 ### Features
