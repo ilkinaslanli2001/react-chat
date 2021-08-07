@@ -1,0 +1,71 @@
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    justify-content: flex-start;
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3px;
+}
+
+.line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tabs svg {
+    width: 18px;
+    height: 18px;
+}
+
+.tabs i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.tabs p {
+    background-color: rgba(76, 86, 106, 0.5);
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    color: white;
+    fill: white;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+
+}
+
+.active {
+    background-color: rgba(76, 86, 106, 0.75) !important;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .wrapper {
+        max-width: inherit;
+        height: 100vh;
+    }
+}

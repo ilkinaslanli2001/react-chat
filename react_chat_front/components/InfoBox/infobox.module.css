@@ -1,0 +1,39 @@
+.wrapper {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    bottom: -300px;
+    animation-duration: 2s;
+}
+
+.wrapper p {
+    border-radius: 2px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+
+.success {
+    background-color: #74b816;
+}
+
+.error {
+    background-color: #ff2500;
+}
+
+@keyframes fadeIn {
+    0% {
+        bottom: -300px;
+        opacity: 0;
+    }
+    50% {
+        bottom: 10px;
+        opacity: 100%;
+
+    }
+    100% {
+        bottom: 10px;
+        opacity: 100%;
+    }
+}

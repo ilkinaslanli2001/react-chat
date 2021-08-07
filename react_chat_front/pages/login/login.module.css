@@ -1,0 +1,128 @@
+.wrapper svg
+{
+    width: 20px;
+    height: 20px;
+}
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    height: 100%;
+}
+.wrapper h1
+{
+    color: rgb(94, 129, 172);
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    max-height: 600px;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 40px 40px;
+}
+.inputs
+{
+    margin-top: 40px;
+    width: 100%;
+
+}
+.inputs input
+{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 40px;
+    background-color: transparent;
+    color: #212121;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(94, 129, 172);
+}
+.inputs input::placeholder
+{
+    color: rgb(94, 129, 172);
+}
+.password_container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    border-bottom: 1px solid rgb(94, 129, 172);
+
+}
+.password_container input
+{
+    margin-top: 0;
+    border-bottom: none;
+}
+.password_container i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    cursor: pointer;
+}
+.container button
+{
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: rgb(94, 129, 172);
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(236, 239, 244,0.7);
+    border: 1px solid rgb(236, 239, 244);
+    cursor: pointer;
+    transition: 0.2s ease all;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.inactive
+{
+    cursor: auto!important;
+}
+.inactive:hover
+{
+    background-color: rgba(236, 239, 244,0.7)!important;
+    border: 1px solid rgb(236, 239, 244)!important;
+}
+.container button:hover
+{
+    background-color:rgb(94, 129, 172) ;
+    color: rgb(236, 239, 244);
+
+}
+.links
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 5px;
+    color: rgb(94, 129, 172) ;
+}
+.links a:hover
+{
+
+    text-decoration: underline;
+}
+@media screen and (max-width: 770px) {
+
+    .container
+    {
+        margin: 0 10px;
+    }
+}

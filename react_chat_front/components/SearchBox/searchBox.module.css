@@ -1,0 +1,39 @@
+.wrapper {
+
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    overflow: auto;
+}
+
+.search_wrapper {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.search_wrapper input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.search_wrapper i {
+    width: 30px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.search_wrapper svg {
+    width: 15px;
+    opacity: 0.5;
+    height: 15px;
+}

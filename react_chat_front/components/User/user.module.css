@@ -1,0 +1,56 @@
+.user {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user:last-child {
+    border-bottom: none;
+}
+
+.user p {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.noProfileImage {
+    padding: 3px;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.user svg {
+    width: 10px;
+    height: 10px;
+}
+
+.user i {
+    margin-left: auto;
+    padding-left: 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.user h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #426696;
+    opacity: 0.8;
+}
