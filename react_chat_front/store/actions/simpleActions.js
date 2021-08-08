@@ -6,9 +6,6 @@ import {
 
 } from '../types'
 
-const initialState = {
-    loading: false,
-}
 
 
 export const setLoading = (loadingState) => async dispatch => {

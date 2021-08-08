@@ -26,7 +26,8 @@ export const userReducer = (state = initialState, action) => {
         case SET_USER_ERROR:
             return {
                 ...state,
-                errors: action.payload
+                errors: action.payload,
+                user: {}
             }
         case  LOGOUT:
 

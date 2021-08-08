@@ -8,7 +8,7 @@ import Router from "next/router";
 import {setFullLoading, setLoading} from "../../store/actions/simpleActions";
 import WithAuth from '../../components/WithAuth'
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
-import Image from 'next/image'
+
 
 function Index(props) {
     const dispatch = useDispatch()
@@ -67,17 +67,15 @@ function Index(props) {
         await form_data.append('username', userData.username);
         await dispatch(updateUser(user.id, form_data))
     }
-
+    console.log(userData)
     return <Wrapper>
 
         <div className={classes.wrapper}>
             <div className={[classes.container, 'glass'].join(' ')}>
                 <div className={classes.img_wrapper}>
-                    <Image quality={100}  src={userData.avatar !== undefined&&userData.avatar !== null ? userData.avatar : '/images/user.png'}
-                           alt={userData.username}
-                           width={120}
-                           height={120}
-                           className={[classes.profile_image, userData.avatar === undefined ? classes.noProfileImage : undefined].join(' ')}/>
+                    <img src={userData.avatar !== null ? userData.avatar : '/images/user.png'}
+                         alt={userData.username}
+                         className={[classes.profile_image, userData.avatar === undefined ? classes.noProfileImage : undefined].join(' ')}/>
                     <div className={classes.select_image}>
                         <input onChange={onImageChange} type="file" id="img" name="img" accept="image/*"/>
                         <i><ChangeLogo/></i>

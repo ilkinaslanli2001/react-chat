@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5481cd3e-bf50-4476-8e9b-3a0609c08b0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/_error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/webpack-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/webpack-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/amp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/amp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/node_modules_emoji-picker-react_dist_index_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/node_modules_emoji-picker-react_dist_index_js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/node_modules_next_dist_client_dev_noop_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/node_modules_next_dist_client_dev_noop_js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/_error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/polyfills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/react-refresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/react-refresh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/09f9e5542dd7aa51ace0.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/0b05afb12d9b8ee0ba3c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/123a7b7917441df244c6.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/12dd84595aa4e9b8ffd3.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/25803ff34afbb4e3cfa9.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/2d786c83b683344d406d.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/3c0f8f2b426bb1862f54.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/45d5fcea4416f6efb74c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/49761b60676b22c59c0a.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/4d7859e9b4c1fd792598.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/5a69f182494283475df2.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/5e0336d56db45a02fad7.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/6167cc6977da463776e7.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/621ff22e1432dc82ed75.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/773dee1470c9157ec46b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/8154d3059b8440bd1e59.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/9584b4fd250b19233025.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/9a84df568bb547d4c178.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/9e707b4c7b5c1a4cf900.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/a2d1e989fcf9cfc39f2a.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/a77b4e92d1e56a014b5e.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/b9a9985cd09343627d2b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/cc44d18da55e6444daf4.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/d28b95f6c12bfbced884.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/d417951dcba98fbb53df.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/de3d30f3941cb55c6853.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/eec50448e0803a75f032.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/f1c4721a9438d290136f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/f80d55faf781ced9aef0.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/fdd7f5ffc56d938be46c.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.0b05afb12d9b8ee0ba3c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.25803ff34afbb4e3cfa9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.4d7859e9b4c1fd792598.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.6167cc6977da463776e7.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.621ff22e1432dc82ed75.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.773dee1470c9157ec46b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.9584b4fd250b19233025.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.cc44d18da55e6444daf4.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.de3d30f3941cb55c6853.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/index.f1c4721a9438d290136f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/login.3c0f8f2b426bb1862f54.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.123a7b7917441df244c6.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.2d786c83b683344d406d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.3c0f8f2b426bb1862f54.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.5a69f182494283475df2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.9a84df568bb547d4c178.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.9e707b4c7b5c1a4cf900.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.a77b4e92d1e56a014b5e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/pages/settings.f80d55faf781ced9aef0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.09f9e5542dd7aa51ace0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.0b05afb12d9b8ee0ba3c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.123a7b7917441df244c6.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.12dd84595aa4e9b8ffd3.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.25803ff34afbb4e3cfa9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.2d786c83b683344d406d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.3c0f8f2b426bb1862f54.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.45d5fcea4416f6efb74c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.49761b60676b22c59c0a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.4d7859e9b4c1fd792598.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.5a69f182494283475df2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.5e0336d56db45a02fad7.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.6167cc6977da463776e7.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.621ff22e1432dc82ed75.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.773dee1470c9157ec46b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.8154d3059b8440bd1e59.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.9584b4fd250b19233025.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.9a84df568bb547d4c178.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.9e707b4c7b5c1a4cf900.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.a2d1e989fcf9cfc39f2a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.a77b4e92d1e56a014b5e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.b9a9985cd09343627d2b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.cc44d18da55e6444daf4.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.d28b95f6c12bfbced884.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.d417951dcba98fbb53df.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.de3d30f3941cb55c6853.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.eec50448e0803a75f032.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.f1c4721a9438d290136f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.f80d55faf781ced9aef0.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.fdd7f5ffc56d938be46c.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1wRsQW4Iw7y3llLLRKmrRvHtcl2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5481cd3e-bf50-4476-8e9b-3a0609c08b0e" name="Default Changelist" comment="" />
+      <created>1628432721913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628432721913</updated>
+      <workItem from="1628432723210" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
