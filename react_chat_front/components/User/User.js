@@ -3,9 +3,7 @@ import classes from "./user.module.css";
 import RightArrow from "../../src/assets/svg/right-arrow.svg";
 import {useDispatch, useSelector} from "react-redux";
 import {setOtherUser} from "../../store/actions/otherUserAction";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import Router from "next/router";
-
+import Image from 'next/image'
 
 function User({data}) {
     const dispatch = useDispatch()
@@ -19,9 +17,10 @@ function User({data}) {
 
     return (
         <div onClick={onUserClick} className={classes.user}>
-            <img className={data?.avatar === null ? classes.noProfileImage : undefined}
-                 src={data?.avatar !== null ? data?.avatar : '/images/user.png'}/>
-            <div>
+            <Image alt={data.username} width={50} height={50} quality={100}
+                   className={data?.avatar === null ? classes.noProfileImage : undefined}
+                   src={data?.avatar !== null ? data?.avatar : '/images/user.png'}/>
+            <div className={classes.info}>
                 <h1>@{data.username}</h1>
                 <p>{data.status}</p>
             </div>

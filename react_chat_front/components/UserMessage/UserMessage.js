@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import classes from './userMessage.module.css'
 import {USER} from "../../constants";
 import {useSelector} from "react-redux";
+import Image from 'next/image'
 
 function UserMessage({sender, message, avatar, timestamp}) {
     const [userAvatar, setAvatar] = useState()
@@ -30,7 +31,8 @@ function UserMessage({sender, message, avatar, timestamp}) {
                     <p>{message}</p>
                     <span className={sender === USER ? classes.u_timestamp : classes.o_timestamp}>{timestamp}</span>
                 </div>
-                <img alt={'profile'} src={userAvatar}/>
+                {userAvatar ?
+                    <Image height={50} width={50} quality={100} alt={'profile'} src={userAvatar}/> : undefined}
             </div>
         </div>
     );

@@ -10,7 +10,6 @@ import {setFullLoading, setLoading} from "../../store/actions/simpleActions";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import Router from "next/router";
 import {setUser} from "../../store/actions/userActions";
-import PublicRoute from '../../components/PublicRoute'
 
 function Index(props) {
     const dispatch = useDispatch()

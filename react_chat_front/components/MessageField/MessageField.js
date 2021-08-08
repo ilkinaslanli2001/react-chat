@@ -9,7 +9,7 @@ import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 import LeftArrow from '../../src/assets/svg/left-arrow.svg'
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {clearOtherUser} from "../../store/actions/otherUserAction";
-
+import Image from 'next/image'
 function MessageField() {
     const {other_user} = useSelector(state => state.otherUserReducer)
 
@@ -64,7 +64,7 @@ function MessageField() {
                 <i onClick={() => {
                     onBackClick()
                 }} className={classes.left}><LeftArrow/></i> : undefined}
-            <img alt={other_user.username} src={other_user.avatar !== null ? other_user.avatar : '/images/user.png'}/>
+            <Image width={50} height={50} alt={other_user.username} src={other_user.avatar !== null ? other_user.avatar : '/images/user.png'}/>
             <h1>@{other_user.username}</h1>
         </div>
         <Messages myRef={myRef} messages={messages}/>

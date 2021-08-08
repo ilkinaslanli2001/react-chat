@@ -1,14 +1,24 @@
 const withReactSvg = require('next-react-svg')
 const path = require('path')
+const withImages = require("next-images");
+const withPlugins = require('next-compose-plugins')
 
 
-module.exports = withReactSvg({
-    include: path.resolve(__dirname, 'src/assets/svg'),
-    webpack(config, options) {
 
-        return config
+
+const imagePlugin = withImages({
+    images: {
+        domains: ['127.0.0.1']
     },
-    reactStrictMode: true,
+    webpack(config, options) {
+        return config;
+    }
+});
+
+const svgPlugin = withReactSvg({
+    include: path.resolve(__dirname, 'src/assets/svg'),
 })
 
+
+module.exports = withPlugins([imagePlugin, svgPlugin])
 

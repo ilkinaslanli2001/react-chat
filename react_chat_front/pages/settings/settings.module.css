@@ -47,6 +47,10 @@
     position: relative;
 }
 
+.noProfileImage
+{
+    padding: 10px!important;
+}
 .select_image {
     position: absolute;
     width: 120px;
@@ -91,7 +95,7 @@
 .img_wrapper img {
     width: 100%;
     height: 100%;
-    border-radius: inherit;
+    border-radius:60px;
     object-fit: cover;
 }
 
