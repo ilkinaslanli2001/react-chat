@@ -5,7 +5,7 @@
 ### Technologies
 * DJOSER (JWT Tokens)
 * Django Channels
-* Redux
+* ReactJs/Redux/NextJs
  
  
 ### Features
