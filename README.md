@@ -11,9 +11,10 @@
 ### Features
 * Login and Registration
 * Set Status and Profile Picture
-* Search User by username 
+* Search Users by username 
 * Using emojis
 * Loading previous messages
+* Auto documentation API endpoints with swagger
 
 
 
