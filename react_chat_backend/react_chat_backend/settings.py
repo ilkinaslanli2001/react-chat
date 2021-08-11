@@ -85,11 +85,31 @@ ASGI_APPLICATION = 'react_chat_backend.asgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'd8qdn1qplupirn',
+
+        'USER': 'etjiozmwuifksd',
+
+        'PASSWORD': 'd38f1552486858d4b5bf9f91131d00cd5e7e5e1e6ffd1775e82de9e896ff35d5',
+
+        'HOST': 'ec2-44-196-146-152.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
