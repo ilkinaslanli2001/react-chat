@@ -165,19 +165,19 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [os.environ.get('REDIS_URL')],
+            "hosts": ['redis://:pbdabffad3d71b4b5507ec63604f7a449c9d1cf0b437600f77336803200884c8e@ec2-44-196-75-206.compute-1.amazonaws.com:30349'],
         },
     },
 }
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": os.environ.get('REDIS_URL'),
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#         }
-#     }
-# }
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION":'redis://:pbdabffad3d71b4b5507ec63604f7a449c9d1cf0b437600f77336803200884c8e@ec2-44-196-75-206.compute-1.amazonaws.com:30349',
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
