@@ -19,8 +19,6 @@ from user.models import User
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
 
-import django
-django.setup()
 
 @database_sync_to_async
 def get_user(user_id):
