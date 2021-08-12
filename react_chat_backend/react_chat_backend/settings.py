@@ -170,7 +170,7 @@ CHANNEL_LAYERS = {
         },
     },
 }
-
+AWS_QUERYSTRING_AUTH=False
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
 AWS_S3_FILE_OVERWRITE = False
