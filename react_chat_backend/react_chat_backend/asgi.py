@@ -38,7 +38,7 @@ class QueryAuthMiddleware:
 
 
 application = ProtocolTypeRouter({
-    "http": get_default_application()
+    "http": get_default_application(),
     "websocket": QueryAuthMiddleware(
         URLRouter(
             chat.routing.websocket_urlpatterns
