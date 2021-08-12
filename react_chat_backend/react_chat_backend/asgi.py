@@ -16,7 +16,7 @@ import chat.routing
 from channels.db import database_sync_to_async
 
 from user.models import User
-
+import django
 
 @database_sync_to_async
 def get_user(user_id):
@@ -28,6 +28,7 @@ def get_user(user_id):
 
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
+django.setup()
 class QueryAuthMiddleware:
     """
     Custom middleware (insecure) that takes user IDs from the query string.
