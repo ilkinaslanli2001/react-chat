@@ -27,7 +27,7 @@ def get_user(user_id):
         return AnonymousUser()
 
 
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
 class QueryAuthMiddleware:
     """
     Custom middleware (insecure) that takes user IDs from the query string.
