@@ -17,11 +17,19 @@ from channels.db import database_sync_to_async
 import django
 from user.models import User
 import os
-
+from django.core.asgi import get_asgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
 django.setup()
 
+application = ProtocolTypeRouter({
+    "http": get_asgi_application(),
+    "websocket": QueryAuthMiddleware(
+        URLRouter(
+            chat.routing.websocket_urlpatterns
+        )
+    ),
+})
 
 @database_sync_to_async
 def get_user(user_id):
@@ -37,7 +45,6 @@ class QueryAuthMiddleware:
     """
     Custom middleware (insecure) that takes user IDs from the query string.
     """
-
     def __init__(self, app):
         self.app = app
 
@@ -46,11 +53,3 @@ class QueryAuthMiddleware:
         return await self.app(scope, receive, send)
 
 
-application = ProtocolTypeRouter({
-    "http": get_default_application(),
-    "websocket": QueryAuthMiddleware(
-        URLRouter(
-            chat.routing.websocket_urlpatterns
-        )
-    ),
-})
