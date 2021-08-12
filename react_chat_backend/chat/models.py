@@ -18,7 +18,6 @@ class ThreadManager(models.Manager):
 
     def get_rooms(self, user):
         username = user.username
-        print('username', username)
         qlookup = Q(first_user__username=username) | Q(second_user__username=username)
         rooms = self.get_queryset().filter(qlookup).distinct()
         users_data = {"users": []}

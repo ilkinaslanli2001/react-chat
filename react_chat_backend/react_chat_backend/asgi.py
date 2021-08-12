@@ -1,8 +1,7 @@
 
 import os
-import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
-django.setup()
+
+
 from channels.auth import AuthMiddlewareStack
 from channels.routing import ProtocolTypeRouter, URLRouter
 from django.contrib.auth.models import AnonymousUser
@@ -36,7 +35,7 @@ class QueryAuthMiddleware:
         return await self.app(scope, receive, send)
 
 
-
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
 application = ProtocolTypeRouter({
     "http": get_asgi_application(),
     "websocket": QueryAuthMiddleware(

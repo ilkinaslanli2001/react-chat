@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%qka3fpf^onjs816^-4^s7l9r0mlw(y5wr1&t^24m7zia)vddj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 
-ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['127.0.0.1:8000']
 
 # Application definition
 
@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_filters',
-    'storages',
     'corsheaders',
     'drf_yasg',
     'channels',
@@ -166,19 +165,15 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts":  [os.environ.get('REDIS_URL')]
+            "hosts": [('127.0.0.1', 6379)],
         },
     },
 }
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
-AWS_S3_SIGNATURE_VERSION = "s3v4"
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID = 'AKIAWHENKBT7KZKQCLFR'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'react-chat-media'
-DOMAIN_NAME = 'https://react-chat-django.herokuapp.com'
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DOMAIN_NAME = 'http://127.0.0.1/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'
 STATIC_URL = '/static/'
