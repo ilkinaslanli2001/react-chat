@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'react_chat_backend.wsgi.application'
+# WSGI_APPLICATION = 'react_chat_backend.wsgi.application'
 ASGI_APPLICATION = 'react_chat_backend.asgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -158,22 +158,21 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+
+
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts":  [os.environ.get('REDIS_URL','redis://localhost:6379')]
+            "hosts":  [os.environ.get('REDIS_URL')]
         },
     },
 }
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": [os.environ.get('REDIS_URL','redis://localhost:6379')],
+        "LOCATION": [os.environ.get('REDIS_URL')],
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }

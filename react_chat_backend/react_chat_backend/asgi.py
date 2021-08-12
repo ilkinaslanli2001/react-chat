@@ -11,15 +11,17 @@ import os
 from channels.auth import AuthMiddlewareStack
 from channels.routing import ProtocolTypeRouter, URLRouter
 from django.contrib.auth.models import AnonymousUser
-from django.core.asgi import get_asgi_application
+from channels.routing import get_default_application
 import chat.routing
 from channels.db import database_sync_to_async
-
+import django
 from user.models import User
 import os
-import django
+
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
 django.setup()
+
 
 @database_sync_to_async
 def get_user(user_id):
@@ -45,7 +47,7 @@ class QueryAuthMiddleware:
 
 
 application = ProtocolTypeRouter({
-    "http": get_asgi_application(),
+    "http": get_default_application(),
     "websocket": QueryAuthMiddleware(
         URLRouter(
             chat.routing.websocket_urlpatterns
