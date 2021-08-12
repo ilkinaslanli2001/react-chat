@@ -16,7 +16,11 @@ import chat.routing
 from channels.db import database_sync_to_async
 
 from user.models import User
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
+
 import django
+django.setup()
 
 @database_sync_to_async
 def get_user(user_id):
@@ -26,8 +30,7 @@ def get_user(user_id):
     except User.DoesNotExist:
         return AnonymousUser()
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'react_chat_backend.settings'
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
+
 
 class QueryAuthMiddleware:
     """
