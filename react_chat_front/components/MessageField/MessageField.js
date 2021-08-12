@@ -30,7 +30,7 @@ function MessageField() {
     useEffect(() => {
 
         if (Object.keys(other_user).length > 0) {
-            const b = new WebSocket(`wss://react-chat-django.herokuapp.com/ws/chat/${other_user.username}/?${user.id}`);
+            const b = new WebSocket(`ws://127.0.0.1:8000/ws/chat/${other_user.username}/?${user.id}`);
             b.onmessage = function (event) {
                 setMessages([...messages, JSON.parse(event.data)])
                 myRef.current.scrollIntoView({behavior: "smooth"})

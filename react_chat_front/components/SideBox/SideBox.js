@@ -16,7 +16,7 @@ function SideBox() {
     const [currentTab, setCurrentTab] = useState(MESSAGE)
 
     useEffect(() => {
-        const socket = new WebSocket(`wss://react-chat-django.herokuapp.com/ws/chat/?${user.id}`,)
+        const socket = new WebSocket(`ws://127.0.0.1:8000/ws/chat/?${user.id}`,)
         socket.onmessage = function (event) {
             setUsersData(JSON.parse(event.data).users)
             socket.close()
