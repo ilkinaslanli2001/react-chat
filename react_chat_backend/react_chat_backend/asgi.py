@@ -17,8 +17,9 @@ from channels.db import database_sync_to_async
 
 from user.models import User
 import os
+import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "react_chat_backend.settings")
-
+django.setup()
 
 @database_sync_to_async
 def get_user(user_id):
