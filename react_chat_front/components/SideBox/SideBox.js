@@ -18,7 +18,7 @@ function SideBox() {
     useEffect(() => {
         const socket = new WebSocket(`ws://127.0.0.1:8000/ws/chat/?${user.id}`,)
         socket.onmessage = function (event) {
-            setUsersData(JSON.parse(event.data).users)
+            setUsersData(JSON.parse(event.data).users.reverse())
             socket.close()
         };
     }, [currentTab])

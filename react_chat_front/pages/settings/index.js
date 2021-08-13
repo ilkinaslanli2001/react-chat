@@ -24,7 +24,7 @@ function Index(props) {
         async function setData() {
             setUserData({
                 username: user.username,
-                status: user.status,
+                status: user.status!==null?user.status:"",
                 avatar: user.avatar,
                 password: ""
             })
@@ -56,8 +56,9 @@ function Index(props) {
     const onLogoutClick = async () => {
         await dispatch(setFullLoading(true))
         await dispatch(logout())
+        await Router.push('/login')
         await dispatch(setFullLoading(false))
-        Router.push('/login')
+
     }
     const onImageChange = async (event) => {
         const picture = event.target.files[0]
@@ -67,7 +68,7 @@ function Index(props) {
         await form_data.append('username', userData.username);
         await dispatch(updateUser(user.id, form_data))
     }
-    console.log(userData)
+
     return <Wrapper>
 
         <div className={classes.wrapper}>

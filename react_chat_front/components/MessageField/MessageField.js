@@ -21,9 +21,16 @@ function MessageField() {
     const {width} = useWindowDimensions();
     const myRef = useRef(null)
 
-    const sendMessage = (message) => {
+    const sendMessage = async (message) => {
+
         if (socket)
+        {
+
             socket.send(message)
+            console.log(myRef)
+
+        }
+
     }
 
 
@@ -68,7 +75,7 @@ function MessageField() {
             <h1>@{other_user.username}</h1>
         </div>
         <Messages myRef={myRef} messages={messages}/>
-        <InputBox sendMessage={sendMessage}/>
+        <InputBox  sendMessage={sendMessage}/>
     </div> : <div className={classes.wrapper}/>
 
 }

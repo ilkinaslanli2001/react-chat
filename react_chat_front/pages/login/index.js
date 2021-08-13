@@ -14,6 +14,7 @@ import {setUser} from "../../store/actions/userActions";
 function Index(props) {
     const dispatch = useDispatch()
     const {loading} = useSelector((state) => state.simpleReducer)
+
     const {user} = useSelector(state => state.userReducer)
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -48,10 +49,12 @@ function Index(props) {
 
         if (loading === false && !ch_errors.emptyPassword && !ch_errors.emptyUsername) {
             dispatch(setLoading(true))
-            await login({username, password}).then(data => {
-                dispatch(setUser())
-                Router.push('/')
-                dispatch(setLoading(false))
+            await login({username, password}).then(async data =>  {
+
+              await  dispatch(setUser())
+              await  Router.push('/')
+
+              await  dispatch(setLoading(false))
 
             }).catch((error) => {
                 setErrors((prevState) => ({...prevState, loginError: error.status}))
