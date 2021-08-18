@@ -11,7 +11,6 @@ function Users({results}) {
                 if (user.id !== u.id)
                     return <User key={key} data={u}/>
             })}
-
         </div>
     );
 }

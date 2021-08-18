@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 function UserProfile(props) {
     const {user} = useSelector(state => state.userReducer)
+
     return (
         <div className={classes.userProfile}>
             <div className={classes.block}>

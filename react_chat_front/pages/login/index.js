@@ -14,7 +14,6 @@ import {setUser} from "../../store/actions/userActions";
 function Index(props) {
     const dispatch = useDispatch()
     const {loading} = useSelector((state) => state.simpleReducer)
-
     const {user} = useSelector(state => state.userReducer)
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -50,12 +49,9 @@ function Index(props) {
         if (loading === false && !ch_errors.emptyPassword && !ch_errors.emptyUsername) {
             dispatch(setLoading(true))
             await login({username, password}).then(async data =>  {
-
               await  dispatch(setUser())
               await  Router.push('/')
-
               await  dispatch(setLoading(false))
-
             }).catch((error) => {
                 setErrors((prevState) => ({...prevState, loginError: error.status}))
                 dispatch(setLoading(false))
@@ -73,7 +69,7 @@ function Index(props) {
                     }} placeholder={"username"}/>
                     {errors.emptyUsername ? <span className={"error"}>Username is empty</span> : undefined}
                     <div className={classes.password_container}>
-                        <input onChange={(event) => {
+                        <input value={password} onChange={(event) => {
                             setPassword(event.target.value)
                         }} placeholder={"password"} type={visible ? "text" : "password"}/>
                         <i onClick={() => {

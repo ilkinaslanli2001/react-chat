@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useCallback, useMemo, useRef} from 'react';
+import React, {useEffect, useState, useRef, useMemo} from 'react';
 import classes from "./messageField.module.css";
 import Messages from "../Messages/Messages";
 import InputBox from "../InputBox/InputBox";
@@ -10,42 +10,34 @@ import LeftArrow from '../../src/assets/svg/left-arrow.svg'
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {clearOtherUser} from "../../store/actions/otherUserAction";
 import Image from 'next/image'
+
 function MessageField() {
     const {other_user} = useSelector(state => state.otherUserReducer)
-
     const {user} = useSelector(state => state.userReducer)
     const {loading} = useSelector(state => state.simpleReducer)
-    const [socket, setSocket] = useState();
     const dispatch = useDispatch()
     const [messages, setMessages] = useState([])
+    const socket = useMemo(() => {
+        if (other_user.username !== undefined) return new WebSocket(`ws://127.0.0.1:8000/ws/chat/${other_user.username}/?${user.id}`);
+    }, [other_user]);
     const {width} = useWindowDimensions();
-    const myRef = useRef(null)
+    const divRef = useRef(null)
 
-    const sendMessage = async (message) => {
-
-        if (socket)
-        {
-
+    const sendMessage = (message) => {
+        if (socket) {
             socket.send(message)
-            console.log(myRef)
-
         }
-
     }
 
-
     useEffect(() => {
-
-        if (Object.keys(other_user).length > 0) {
-            const b = new WebSocket(`ws://127.0.0.1:8000/ws/chat/${other_user.username}/?${user.id}`);
-            b.onmessage = function (event) {
+        if (Object.keys(other_user).length > 0 && socket) {
+            socket.onmessage = function (event) {
                 setMessages([...messages, JSON.parse(event.data)])
-                myRef.current.scrollIntoView({behavior: "smooth"})
-                b.close()
+                divRef.current===null||divRef.current?.scrollIntoView({behavior: "smooth"})
             }
-            setSocket(b)
         }
     }, [messages])
+
     useEffect(() => {
         async function get_messages_from_db() {
             dispatch(setLoading(true))
@@ -71,11 +63,12 @@ function MessageField() {
                 <i onClick={() => {
                     onBackClick()
                 }} className={classes.left}><LeftArrow/></i> : undefined}
-            <Image width={50} height={50} alt={other_user.username} src={other_user.avatar !== null ? other_user.avatar : '/images/user.png'}/>
+            <Image width={50} height={50} alt={other_user.username}
+                   src={other_user.avatar !== null ? other_user.avatar : '/images/user.png'}/>
             <h1>@{other_user.username}</h1>
         </div>
-        <Messages myRef={myRef} messages={messages}/>
-        <InputBox  sendMessage={sendMessage}/>
+        <Messages divRef={divRef} messages={messages}/>
+        <InputBox sendMessage={sendMessage}/>
     </div> : <div className={classes.wrapper}/>
 
 }

@@ -11,16 +11,18 @@ import {useSelector} from "react-redux";
 function SideBox() {
 
     const {user} = useSelector(state => state.userReducer)
-
-    const [usersData, setUsersData] = useState({})
+    const [usersData, setUsersData] = useState([])
     const [currentTab, setCurrentTab] = useState(MESSAGE)
-
     useEffect(() => {
-        const socket = new WebSocket(`ws://127.0.0.1:8000/ws/chat/?${user.id}`,)
-        socket.onmessage = function (event) {
-            setUsersData(JSON.parse(event.data).users.reverse())
-            socket.close()
-        };
+        if(currentTab===MESSAGE)
+        {
+            const socket = new WebSocket(`ws://127.0.0.1:8000/ws/chat/?${user.id}`,)
+            socket.onmessage = function (event) {
+                setUsersData(JSON.parse(event.data).users.reverse())
+                socket.close()
+            };
+        }
+
     }, [currentTab])
 
     return (

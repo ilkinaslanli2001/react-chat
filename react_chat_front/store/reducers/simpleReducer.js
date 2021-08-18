@@ -3,17 +3,24 @@ import {
     FULL_LOADING_TRUE,
     LOADING_FALSE,
     LOADING_TRUE,
+    SET_INFO_BOX
 } from '../types'
 
 
 const initialState = {
     loading: false,
-    full_loading: false
+    full_loading: false,
+    info_box_type: 0
 }
 
 export const simpleReducer = (state = initialState, action) => {
     switch (action.type) {
+        case SET_INFO_BOX:
 
+            return {
+                ...state,
+                info_box_type: action.payload
+            }
         case LOADING_TRUE:
 
             return {

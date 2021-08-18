@@ -4,27 +4,28 @@ import {useDispatch, useSelector} from "react-redux";
 import {logout, updateUser} from "../../store/actions/userActions";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import ChangeLogo from '../../src/assets/svg/change.svg'
-import Router from "next/router";
-import {setFullLoading, setLoading} from "../../store/actions/simpleActions";
 import WithAuth from '../../components/WithAuth'
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
-
+import InfoBox from "../../components/InfoBox/InfoBox";
+import {SUCCESS} from '../../constants'
+import {setInfoBox} from "../../store/actions/simpleActions";
 
 function Index(props) {
     const dispatch = useDispatch()
     const {user, errors} = useSelector(state => state.userReducer)
-    const {loading} = useSelector(state => state.simpleReducer)
+    const {loading,info_box_type} = useSelector(state => state.simpleReducer)
     const [userData, setUserData] = useState({
         username: "",
         password: "",
         status: "",
         avatar: null
     })
+
     useEffect(() => {
         async function setData() {
             setUserData({
                 username: user.username,
-                status: user.status!==null?user.status:"",
+                status: user.status !== null ? user.status : "",
                 avatar: user.avatar,
                 password: ""
             })
@@ -32,8 +33,6 @@ function Index(props) {
 
         setData()
     }, [user])
-
-
     const onSaveClick = async () => {
         var params = {}
         if (user.username !== userData.username) {
@@ -48,17 +47,12 @@ function Index(props) {
 
         if (Object.keys(params).length !== 0) {
             params.username = userData.username
-            await dispatch(setLoading(true))
             await dispatch(updateUser(user.id, params))
-            await dispatch(setLoading(false))
+
         }
     }
     const onLogoutClick = async () => {
-        await dispatch(setFullLoading(true))
         await dispatch(logout())
-        await Router.push('/login')
-        await dispatch(setFullLoading(false))
-
     }
     const onImageChange = async (event) => {
         const picture = event.target.files[0]
@@ -72,6 +66,7 @@ function Index(props) {
     return <Wrapper>
 
         <div className={classes.wrapper}>
+            {info_box_type!==0 ? <InfoBox type={info_box_type}/>:undefined}
             <div className={[classes.container, 'glass'].join(' ')}>
                 <div className={classes.img_wrapper}>
                     <img src={userData.avatar !== null ? userData.avatar : '/images/user.png'}

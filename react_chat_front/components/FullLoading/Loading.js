@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './fullLoading.module.css'
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
-function Loading(props) {
+function Loading() {
     return (
         <div className={classes.wrapper}>
             <LoadingSpinner/>

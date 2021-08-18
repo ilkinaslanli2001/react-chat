@@ -5,12 +5,12 @@ import {USER, OTHER} from "../../constants";
 import {useSelector} from "react-redux";
 import {LOGOUT} from "../../store/types";
 
-function Messages({messages, myRef}) {
+function Messages({messages, divRef}) {
 
     const {user} = useSelector(state => state.userReducer)
 
     useEffect(() => {
-        myRef.current.scrollIntoView()
+        divRef.current.scrollIntoView()
     }, [])
     return (
         <div className={classes.wrapper}>
@@ -20,7 +20,7 @@ function Messages({messages, myRef}) {
                                     message={data.content}
                                     sender={data.author.username === user.username ? USER : OTHER}/>
             })}
-            <div ref={myRef}/>
+            <div ref={divRef}/>
         </div>
     );
 }

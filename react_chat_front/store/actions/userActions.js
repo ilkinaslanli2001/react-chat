@@ -3,7 +3,9 @@ import {
 
 } from '../types'
 import {axiosInstance} from "../../api";
-
+import {setFullLoading, setInfoBox, setLoading} from "./simpleActions";
+import {SUCCESS,ERROR} from '../../constants'
+import Router from "next/router";
 
 export const setUser = () => async dispatch => {
 
@@ -38,6 +40,7 @@ export const setUser = () => async dispatch => {
 
 }
 export const logout = () => async dispatch => {
+    dispatch(setFullLoading(true))
     localStorage.removeItem('access')
     localStorage.removeItem('refresh')
 
@@ -45,32 +48,36 @@ export const logout = () => async dispatch => {
         type: LOGOUT,
         payload: {}
     })
+    await Router.push('/login')
+    dispatch(setFullLoading(false))
 }
-
+// DOM — это независящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML
 export const updateUser = (id, params) => async dispatch => {
-
-    axiosInstance.put(`/api/v1/users/profile/${id}/`, params)
+    dispatch(setLoading(true))
+    await axiosInstance.put(`/api/v1/users/profile/${id}/`, params)
         .then((response) => {
-
+            dispatch(setLoading(false))
+            dispatch(setInfoBox(SUCCESS))
             dispatch({
                 type: SET_USER_SUCCESS,
                 payload: response.data
             })
         }).catch(error => {
+            dispatch(setLoading(false))
+            dispatch(setInfoBox(ERROR))
+            if (error.response) {
+                dispatch({
+                    type: SET_USER_ERROR,
+                    payload: error.response.data
+                })
 
-        if (error.response) {
-            dispatch({
-                type: SET_USER_ERROR,
-                payload: error.response.data
-            })
-
-        } else {
-            dispatch({
-                type: SET_USER_ERROR,
-                payload: {error: error}
-            })
-        }
+            } else {
+                dispatch({
+                    type: SET_USER_ERROR,
+                    payload: {error: error}
+                })
+            }
 
 
-    })
+        })
 }

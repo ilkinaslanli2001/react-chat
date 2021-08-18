@@ -10,7 +10,6 @@ function UserMessage({sender, message, avatar, timestamp}) {
     useEffect(() => {
 
         if (sender === USER) {
-
             if (user.avatar === null) {
                 setAvatar('/images/user.png')
             } else

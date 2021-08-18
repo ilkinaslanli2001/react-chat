@@ -6,6 +6,7 @@ import {useSelector} from "react-redux";
 
 function HomeMobile(props) {
     const {other_user} = useSelector(state => state.otherUserReducer)
+    // if user selected other_user then go to chat
     return (
         <div className={classes.wrapper}>
             <div className={classes.container}>
