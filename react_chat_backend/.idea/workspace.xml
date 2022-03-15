@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5481cd3e-bf50-4476-8e9b-3a0609c08b0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/server/pages/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/pages/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.2dfa4d2dda80d19dd77f.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.2dfa4d2dda80d19dd77f.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.5ba9b3d72f1441612570.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.5ba9b3d72f1441612570.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.614573eab801b8839f5c.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.614573eab801b8839f5c.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.6ff2fbaabd080c792102.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.6ff2fbaabd080c792102.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.90560ec478d0c4b60e26.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.90560ec478d0c4b60e26.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.aab568030845a5bd428c.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.aab568030845a5bd428c.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.b51c3b17e4f1b5fe92ec.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.b51c3b17e4f1b5fe92ec.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.c3042270a722f09124bc.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_chat_front/.next/static/webpack/webpack.c3042270a722f09124bc.hot-update.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1wRsQW4Iw7y3llLLRKmrRvHtcl2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/student_work" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5481cd3e-bf50-4476-8e9b-3a0609c08b0e" name="Default Changelist" comment="" />
+      <created>1628432721913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628432721913</updated>
+      <workItem from="1628432723210" duration="13000" />
+      <workItem from="1628784007223" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
